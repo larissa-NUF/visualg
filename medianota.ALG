@@ -6,7 +6,7 @@ Algoritmo "média"
 // Data atual  : 19/05/2020
 Var
 // Seção de Declarações das variáveis 
-nota1, nota2, nota3, nota4, notafinal, f: real
+nota, nota1, nota2, nota3, nota4, notafinal, f: real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
@@ -19,7 +19,9 @@ escreval ("Digite terceira nota:")
 leia (nota3)
 escreval ("Digite quarta nota:")
 leia (nota4)
-notafinal<-(nota1+nota2+nota3+nota4)/4
+nota<-nota1+nota2+nota3+nota4
+escreval ("A soma das notas é:", nota)
+notafinal<-nota/4
 escreval ("A média entre as notas é:", notafinal)
 
 se (notafinal>=7) entao
