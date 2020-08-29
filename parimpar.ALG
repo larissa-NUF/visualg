@@ -10,15 +10,15 @@ num, num2, num3,di: real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-escreval ("Programa de reconhecimento de números")
+escreval ("Programa para indentificar se o número é ímpar ou par")
 escreval ("Digite o número:")
 leia (num)
 se (num % 2=0) entao
 num2<-num+5
-escreval ("O número informado é par:", num2)
+escreval ("O número informado é par, e somando com 5 é:", num2)
 senao
-num2<-num*30
-escreval ("O número informado é ímpar:", num2)
+num2<-num*3
+escreval ("O número informado é ímpar, e multiplicado por 3 é:", num2)
 fimse
 
 

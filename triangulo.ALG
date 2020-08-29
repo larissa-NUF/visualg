@@ -10,6 +10,7 @@ a,b,c:real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("programa de triângulos")
 escreval ("Digite o valor de A:")
 leia (a)
 escreval ("Digite o valor de B")
@@ -17,19 +18,19 @@ leia (b)
 escreval ("Digite o valor de C:")
 leia (c)
 
-se (a<b+c) ou (b<a+c) ou (c<a+b) entao
+se (a>b+c) ou (b>a+c) ou (c>a+b) entao
+   escreval ("Não é possível formar um triângulo com esses valores")
+senao
    se (a=b) e (a=c) e (c=b) entao
    escreval ("É possível formar um triângulo equilátero")
    fimse
    se (a<>b) ou (a<>c) ou (b<>c) entao
       se (c=b) ou (a=c) ou (a=b) entao
       escreval ("É possível formar um triângulo isósceles")
-   senao
-   escreval ("É possível formar um triângulo escaleno")
+      senao
+      escreval ("É possível formar um triângulo escaleno")
+      fimse
    fimse
-   fimse
-senao
-escreval ("Não é possível formar um triângulo com esses valores")
 fimse
 
 

@@ -27,7 +27,7 @@ r<-ingresso-des
 escreval ("O valor do ingresso com desconto é:", r)
 fimse
 se (idade<=40) e (idade>=21) entao
-des<-(ingresso*)/100
+des<-(ingresso*2)/100
 r<-ingresso-des
 escreval ("O valor do ingresso com desconto é:", r)
 fimse
