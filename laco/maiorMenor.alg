@@ -4,41 +4,26 @@ algoritmo "maior menor"
 // Data : 29/08/2020
 // Seção de Declarações 
 var
-v: vetor [1..30] de inteiro
-n,j,qtde,aux: inteiro
+n,menor,maior: inteiro
 inicio
 // Seção de Comandos
 escreval ("Programa informa qual número é maior e menor")
-escreval ("***Só é possível compara 30 números por vez***")
+escreval ("Digite o número:")
+leia (menor)
+
 //entrrada
 repita
-   escreval ("Didite 0 para sair")
-   escreval ("Caso contrario digite a quantidade de números que deseja comparar:")
-   leia (qtde)
-   se ((0<qtde) e (qtde<=30)) entao
-      limpatela
-      para n de 1 ate qtde faca
-        escreval ("Digite o ",n,"º número:")
-        leia (v[n])
-     fimpara
-     para n de 1 ate (qtde-1) faca
-        para j de (n+1) ate qtde faca
-             se (v[n]>v[j]) entao
-                aux<-v[n]
-                v[n]<-v[j]
-                v[j]<-aux
+        escreval ("Digite o número:")
+        leia (n)
+
+             se ((n<menor) ou (n<>0)) entao
+                menor<-n
              fimse
-        fimpara
-     fimpara
-     escreval ("O número maior é: ",v[qtde])
-     escreval ("O número menor é: ",v[1])
-   senao
-     se (qtde=0) entao
-        interrompa
-     senao
-        escreval ("Só é possível compara 30 números por vez.")
-        escreval ("Por favor digite um valor válido.")
-     fimse
-   fimse
-ate (qtde=0)
+             se (n>maior) entao
+                maior<-n
+             fimse
+
+ate(n=0)
+escreval ("O número maior é: ",maior)
+escreval ("O número menor é: ",menor)
 fimalgoritmo
